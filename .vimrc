@@ -76,6 +76,10 @@
 
     nnoremap <LEADER>p :r !pbpaste<CR>
 
+    if executable('xclip')
+        vnoremap <LEADER>c :!xclip -selection clipboard -f<CR>u
+    endif
+
     nnoremap <leader>w :w<CR>
 
     " don't show the documentation
