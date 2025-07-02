@@ -108,3 +108,7 @@
 " tagbar {{{
     Plug 'preservim/tagbar'
 " }}}
+
+" {{{
+    Plug 'github/copilot.vim'
+" }}}
