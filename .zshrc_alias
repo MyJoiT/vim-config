@@ -1,0 +1,9 @@
+alias ack="ack --ignore-file=match:\.md$ --ignore-file=is:yarn.lock --ignore-dir=match:/docs/ --ignore-file=ext:yaml,json --ignore-dir=match:/node_modules/ --ignore-dir=match:/.next/"
+
+alias codelines='find . \( -path "*/node_modules" -o -path "*/dist" -o -path "*/samples" -o -path "*/.turbo" -o -path "*/docs" -o -path "*/.git" -o -path "*/.github" -o -path "*/cache" -o -path "*/intiface-engine" -o -path "*/.vscode" -o -name "LICENSE" -o -name "pnpm-lock.yaml" -o -name "*.md" -o -name "model.gguf" -o -name "package-lock.json" -o -path "*/dataset" -o -name "*.sqlite" -o -name ".DS_Store" -o -name ".gitignore" -o -name "package.json" \) -prune -o -type f -print | xargs wc -l'
+
+alias rg="ranger"
+
+alias uvenv="source .venv/bin/activate"
+
+alias tree="tree --gitignore"

@@ -1,0 +1,44 @@
+!$HOME/.Xresources
+URxvt.preeditType:Root
+!input method
+URxvt.inputMethod:fcitx
+!color
+URxvt.depth:32
+URxvt.inheritPixmap:true
+URxvt.background:[50]#000000
+URxvt.foreground:#ffffff
+URxvt.colorBD:Gray95
+URxvt.colorUL:Green
+URxvt.color1:Red2
+URxvt.color4:RoyalBlue
+URxvt.color5:Magenta2
+URxvt.color8:Gray50
+URxvt.color10:Green2
+URxvt.color12:DodgerBlue
+URxvt.color14:Cyan2
+URxvt.color15:Gray95
+!for URL
+URxvt.urlLauncher:google-chrome-stable
+URxvt.matcher.button:1
+Urxvt.perl-ext-common:matcher
+!scroll bar
+URxvt.scrollBar:False
+URxvt.scrollBar_floating:False
+URxvt.scrollstyle:plain
+!scroll interactive
+URxvt.mouseWheelScrollPage:True
+URxvt.scrollTtyOutput:False
+URxvt.scrollWithBuffer:True
+URxvt.scrollTtyKeypress:True
+!cursor
+URxvt.cursorBlink:True
+URxvt.saveLines:3000
+!border
+URxvt.borderLess:False
+!font
+Xft.dpi:96
+URxvt.font:xft:DroidSansM Nerd Font Mono:pixelsize=28, \
+          :xft:Noto Mono for Powerline:pixelsize=28
+!xft:Source Code Pro:antialias=True:pixelsize=28, \
+!xft:PowerlineSymbols:style=Medium:pixelsize=28, \
+!xft:Powerline Extra Symbols:style=Regular:pixelsize=28
