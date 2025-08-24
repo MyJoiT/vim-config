@@ -16,8 +16,8 @@
     set nowrap
     set fileformat=unix
     set cindent
-    set tabstop=4
-    set shiftwidth=4
+    set tabstop=2
+    set shiftwidth=2
     set showmatch
     set scrolloff=18
     set laststatus=2
@@ -30,6 +30,7 @@
     set matchtime=5
     set ignorecase
     set incsearch
+    set wildignorecase
     set hlsearch
     set expandtab
     set whichwrap+=<,>,h,l
@@ -86,6 +87,12 @@
     map <F1> <NOP>
     imap <F1> <NOP>
 
+    " Auto-update tags using make when saving files
+    autocmd BufWritePost *.js,*.jsx,*.ts,*.tsx silent! !make tags > /dev/null 2>&1 &
+
+    " Or create a vim command
+    command! UpdateTags !make tags
+    nnoremap <leader>ut :UpdateTags<CR>
 " }}}
 
 " vim plug settings {{{
