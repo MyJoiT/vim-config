@@ -1,0 +1,11 @@
+curl -fLO https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/DroidSansMono/DroidSansMNerdFontMono-Regular.otf
+
+curl -fLO https://github.com/powerline/fonts/raw/master/NotoMono/Noto%20Mono%20for%20Powerline.ttf
+
+curl -fLO https://github.com/ryanoasis/nerd-fonts/raw/master/src/glyphs/powerline-symbols/PowerlineSymbols.otf 
+
+curl -fLO https://github.com/ryanoasis/nerd-fonts/raw/master/src/glyphs/powerline-extra/PowerlineExtraSymbols.otf
+
+sudo pacman -S noto-fonts noto-fonts-emoji noto-fonts-cjk noto-fonts-extra
+
+yay -S ttf-joypixels
