@@ -79,7 +79,8 @@
     endif
 
     " Linters
-    let g:ale_linters = { "python": ["ruff"] }
+    let g:ale_linters = { 'python': ['ruff'], 'rust': ['analyzer'], 'typescript': ['biome'], 'typescriptreact': ['biome'] }
+
     " Fixers
     let g:ale_fixers = { "python": ["ruff", "ruff_format"] }
 
